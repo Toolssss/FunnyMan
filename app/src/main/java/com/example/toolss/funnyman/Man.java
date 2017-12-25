@@ -13,7 +13,7 @@ public class Man {
     private int w,h,nFrames;
     private Rect frame;
     private long prevTime;
-    private long delay = 200;
+    private long delay = 100;
     private float vx;
 
 
