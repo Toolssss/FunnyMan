@@ -30,9 +30,11 @@ public class View extends android.view.View {
         super.onDraw(canvas);
         for (Man man : objects){
             man.draw(canvas);
+            man.update();
         }
 
         invalidate();
+
     }
 
     @Override
