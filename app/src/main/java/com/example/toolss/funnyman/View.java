@@ -31,6 +31,7 @@ public class View extends android.view.View {
         for (Man man : objects){
             man.draw(canvas);
         }
+
         invalidate();
     }
 
@@ -38,6 +39,7 @@ public class View extends android.view.View {
     public boolean onTouchEvent(MotionEvent event) {
         for (Man man : objects){
             man.touch(event);
+            man.update();
         }
 
 
